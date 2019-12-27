@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Excel = Microsoft.Office.Interop.Excel;
-using Word = Microsoft.Office.Interop.Word;
 using System.IO;
 using System.Windows.Forms;
 using MetroFramework.Controls;
@@ -12,7 +10,6 @@ namespace CompleteApp
     public partial class AppManager
     {
         public readonly string configFileName = "config.txt";
-        public static string fileNamePattern = "CompanyName";
         public static bool isConfigFileFind = false;
 
         public MetroStyleManager metroStyleManager;
@@ -27,10 +24,11 @@ namespace CompleteApp
         public MetroCheckBox activeBoxB;
         public MetroCheckBox activeBoxC;
 
-        public int backgroundTeam = 1;
-        public int backgroundHead = 0;
+        public int backgroundTeam;
+        public int backgroundHead;
         public string keyword;
         public string adress;
+        public string companyName;
 
         private StreamReader _sr;
         private StreamWriter _sw;

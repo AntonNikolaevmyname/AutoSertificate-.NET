@@ -12,9 +12,11 @@ namespace CompleteApp
             _names = new List<string>();
         }
 
-        public void SaveSettings(string adress, string keyword)
+        public void SaveSettings(string adress, string keyword, string companyName)
         {
-            if (adress == null || keyword == null)
+            if (string.IsNullOrEmpty(adress)  || 
+                string.IsNullOrEmpty(keyword) || 
+                string.IsNullOrEmpty(companyName))
             {
                 MessageBox.Show($"Поля обязательно должны быть заполнены!", $"Invalid data.");
                 return;
@@ -22,7 +24,20 @@ namespace CompleteApp
 
             this.adress = adress;
             this.keyword = keyword;
+            this.companyName = companyName;
 
+            WriteConfig();
+        }
+
+        public void SaveUISettings(int backgroundTeam, int backgroundHead) 
+        {
+            if(backgroundTeam == 0 || backgroundTeam == 1)
+                this.backgroundTeam = backgroundTeam;
+            if(backgroundHead > 0)
+                this.backgroundHead = backgroundHead;
+
+            ChangeTeam(this.backgroundTeam);
+            ChangeHead(this.backgroundHead);
             WriteConfig();
         }
 

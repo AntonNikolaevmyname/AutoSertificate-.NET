@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Windows.Forms;
 
 namespace CompleteApp
@@ -32,6 +33,15 @@ namespace CompleteApp
                     case 1:
                         keyword = line;
                         break;
+                    case 2:
+                        companyName = line;
+                        break;
+                    case 3:
+                        backgroundTeam = Int32.Parse(line);
+                        break;
+                    case 4:
+                        backgroundHead = Int32.Parse(line);
+                        break;
                     default:
                         break;
                 }
@@ -49,10 +59,13 @@ namespace CompleteApp
             }
 
             _sw =
-                 new StreamWriter(@"config.txt", false, System.Text.Encoding.Default);
+                 new StreamWriter(configFileName, false, System.Text.Encoding.Default);
 
             _sw.WriteLine(adress);
             _sw.WriteLine(keyword);
+            _sw.WriteLine(companyName);
+            _sw.WriteLine(backgroundTeam);
+            _sw.WriteLine(backgroundHead);
 
             _sw.Close();
         }

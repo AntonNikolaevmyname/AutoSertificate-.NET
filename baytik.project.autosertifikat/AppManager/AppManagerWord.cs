@@ -22,7 +22,7 @@ namespace CompleteApp
                     progressBar.PerformStep();
                     for (int i = 0; i < _names.Count; i++)
                     {
-                        CreateWordDocument(openFileDialog1.FileName, $"{adress}{fileNamePattern}_{_names[i]}", i);
+                        CreateWordDocument(openFileDialog1.FileName, $"{adress}{companyName}_{_names[i]}", i);
                         progressBar.PerformStep();
                     }
                     progressBar.PerformStep();

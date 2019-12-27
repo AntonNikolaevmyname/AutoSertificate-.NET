@@ -36,6 +36,7 @@
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.tabPageMain = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
             this.pg1 = new MetroFramework.Controls.MetroProgressBar();
             this.btnRefreshList = new MetroFramework.Controls.MetroButton();
             this.metroLabel10 = new MetroFramework.Controls.MetroLabel();
@@ -55,6 +56,8 @@
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.btnExcel = new MetroFramework.Controls.MetroButton();
             this.btnWord = new MetroFramework.Controls.MetroButton();
+            this.tabPagePrint = new MetroFramework.Controls.MetroTabPage();
+            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.tabPageSettings = new MetroFramework.Controls.MetroTabPage();
             this.btnSaveSetting = new MetroFramework.Controls.MetroButton();
             this.textBoxKeyword = new MetroFramework.Controls.MetroTextBox();
@@ -64,15 +67,14 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.metroLabel11 = new MetroFramework.Controls.MetroLabel();
-            this.tabPagePrint = new MetroFramework.Controls.MetroTabPage();
-            this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
+            this.textBoxOrganName = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
             this.tabPageMain.SuspendLayout();
-            this.tabPageSettings.SuspendLayout();
             this.tabPagePrint.SuspendLayout();
+            this.tabPageSettings.SuspendLayout();
             this.SuspendLayout();
             // 
             // ComboBox_changeTeam
@@ -82,7 +84,7 @@
             this.ComboBox_changeTeam.Items.AddRange(new object[] {
             "Dark",
             "Light"});
-            this.ComboBox_changeTeam.Location = new System.Drawing.Point(5, 254);
+            this.ComboBox_changeTeam.Location = new System.Drawing.Point(5, 353);
             this.ComboBox_changeTeam.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ComboBox_changeTeam.Name = "ComboBox_changeTeam";
             this.ComboBox_changeTeam.Size = new System.Drawing.Size(160, 29);
@@ -115,7 +117,7 @@
             "Purple",
             "Red",
             "Yellow"});
-            this.ComboBox_changeHead.Location = new System.Drawing.Point(185, 254);
+            this.ComboBox_changeHead.Location = new System.Drawing.Point(185, 353);
             this.ComboBox_changeHead.Name = "ComboBox_changeHead";
             this.ComboBox_changeHead.Size = new System.Drawing.Size(160, 29);
             this.ComboBox_changeHead.TabIndex = 2;
@@ -146,7 +148,7 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 0;
+            this.metroTabControl1.SelectedIndex = 2;
             this.metroTabControl1.Size = new System.Drawing.Size(879, 487);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
@@ -189,6 +191,15 @@
             this.tabPageMain.VerticalScrollbarBarColor = true;
             this.tabPageMain.VerticalScrollbarHighlightOnWheel = false;
             this.tabPageMain.VerticalScrollbarSize = 10;
+            // 
+            // metroLabel11
+            // 
+            this.metroLabel11.AutoSize = true;
+            this.metroLabel11.Location = new System.Drawing.Point(3, 15);
+            this.metroLabel11.Name = "metroLabel11";
+            this.metroLabel11.Size = new System.Drawing.Size(237, 19);
+            this.metroLabel11.TabIndex = 30;
+            this.metroLabel11.Text = "Файл нужно выбрать лишь один раз:";
             // 
             // pg1
             // 
@@ -368,8 +379,35 @@
             this.btnWord.UseSelectable = true;
             this.btnWord.Click += new System.EventHandler(this.Word_click);
             // 
+            // tabPagePrint
+            // 
+            this.tabPagePrint.Controls.Add(this.metroLabel12);
+            this.tabPagePrint.HorizontalScrollbarBarColor = true;
+            this.tabPagePrint.HorizontalScrollbarHighlightOnWheel = false;
+            this.tabPagePrint.HorizontalScrollbarSize = 9;
+            this.tabPagePrint.Location = new System.Drawing.Point(4, 38);
+            this.tabPagePrint.Name = "tabPagePrint";
+            this.tabPagePrint.Size = new System.Drawing.Size(871, 445);
+            this.tabPagePrint.TabIndex = 3;
+            this.tabPagePrint.Text = "Печать";
+            this.tabPagePrint.VerticalScrollbarBarColor = true;
+            this.tabPagePrint.VerticalScrollbarHighlightOnWheel = false;
+            this.tabPagePrint.VerticalScrollbarSize = 8;
+            // 
+            // metroLabel12
+            // 
+            this.metroLabel12.AutoSize = true;
+            this.metroLabel12.Location = new System.Drawing.Point(292, 197);
+            this.metroLabel12.Name = "metroLabel12";
+            this.metroLabel12.Size = new System.Drawing.Size(254, 19);
+            this.metroLabel12.TabIndex = 2;
+            this.metroLabel12.Text = "Этот функционал сейчас в разработке...";
+            this.metroLabel12.UseWaitCursor = true;
+            // 
             // tabPageSettings
             // 
+            this.tabPageSettings.Controls.Add(this.textBoxOrganName);
+            this.tabPageSettings.Controls.Add(this.metroLabel13);
             this.tabPageSettings.Controls.Add(this.btnSaveSetting);
             this.tabPageSettings.Controls.Add(this.textBoxKeyword);
             this.tabPageSettings.Controls.Add(this.textBoxAdress);
@@ -397,7 +435,7 @@
             // 
             // btnSaveSetting
             // 
-            this.btnSaveSetting.Location = new System.Drawing.Point(0, 160);
+            this.btnSaveSetting.Location = new System.Drawing.Point(7, 232);
             this.btnSaveSetting.Name = "btnSaveSetting";
             this.btnSaveSetting.Size = new System.Drawing.Size(160, 45);
             this.btnSaveSetting.TabIndex = 23;
@@ -486,7 +524,7 @@
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(185, 219);
+            this.metroLabel2.Location = new System.Drawing.Point(185, 318);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(45, 19);
             this.metroLabel2.TabIndex = 4;
@@ -495,7 +533,7 @@
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(5, 219);
+            this.metroLabel1.Location = new System.Drawing.Point(5, 318);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(46, 19);
             this.metroLabel1.TabIndex = 3;
@@ -505,39 +543,44 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // metroLabel11
+            // textBoxOrganName
             // 
-            this.metroLabel11.AutoSize = true;
-            this.metroLabel11.Location = new System.Drawing.Point(3, 15);
-            this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(237, 19);
-            this.metroLabel11.TabIndex = 30;
-            this.metroLabel11.Text = "Файл нужно выбрать лишь один раз:";
             // 
-            // tabPagePrint
             // 
-            this.tabPagePrint.Controls.Add(this.metroLabel12);
-            this.tabPagePrint.HorizontalScrollbarBarColor = true;
-            this.tabPagePrint.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabPagePrint.HorizontalScrollbarSize = 10;
-            this.tabPagePrint.Location = new System.Drawing.Point(5, 39);
-            this.tabPagePrint.Name = "tabPagePrint";
-            this.tabPagePrint.Size = new System.Drawing.Size(871, 445);
-            this.tabPagePrint.TabIndex = 3;
-            this.tabPagePrint.Text = "Печать";
-            this.tabPagePrint.VerticalScrollbarBarColor = true;
-            this.tabPagePrint.VerticalScrollbarHighlightOnWheel = false;
-            this.tabPagePrint.VerticalScrollbarSize = 10;
             // 
-            // metroLabel12
+            this.textBoxOrganName.CustomButton.Image = null;
+            this.textBoxOrganName.CustomButton.Location = new System.Drawing.Point(709, 1);
+            this.textBoxOrganName.CustomButton.Name = "";
+            this.textBoxOrganName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.textBoxOrganName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textBoxOrganName.CustomButton.TabIndex = 1;
+            this.textBoxOrganName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textBoxOrganName.CustomButton.UseSelectable = true;
+            this.textBoxOrganName.CustomButton.Visible = false;
+            this.textBoxOrganName.Lines = new string[0];
+            this.textBoxOrganName.Location = new System.Drawing.Point(7, 194);
+            this.textBoxOrganName.MaxLength = 32767;
+            this.textBoxOrganName.Name = "textBoxOrganName";
+            this.textBoxOrganName.PasswordChar = '\0';
+            this.textBoxOrganName.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBoxOrganName.SelectedText = "";
+            this.textBoxOrganName.SelectionLength = 0;
+            this.textBoxOrganName.SelectionStart = 0;
+            this.textBoxOrganName.ShortcutsEnabled = true;
+            this.textBoxOrganName.Size = new System.Drawing.Size(731, 23);
+            this.textBoxOrganName.TabIndex = 24;
+            this.textBoxOrganName.UseSelectable = true;
+            this.textBoxOrganName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textBoxOrganName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(292, 197);
-            this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(254, 19);
-            this.metroLabel12.TabIndex = 2;
-            this.metroLabel12.Text = "Этот функционал сейчас в разработке...";
-            this.metroLabel12.UseWaitCursor = true;
+            // metroLabel13
+            // 
+            this.metroLabel13.AutoSize = true;
+            this.metroLabel13.Location = new System.Drawing.Point(5, 161);
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.Size = new System.Drawing.Size(199, 19);
+            this.metroLabel13.TabIndex = 25;
+            this.metroLabel13.Text = "Название вашей организации:";
             // 
             // Form1
             // 
@@ -558,10 +601,10 @@
             this.metroTabControl1.ResumeLayout(false);
             this.tabPageMain.ResumeLayout(false);
             this.tabPageMain.PerformLayout();
-            this.tabPageSettings.ResumeLayout(false);
-            this.tabPageSettings.PerformLayout();
             this.tabPagePrint.ResumeLayout(false);
             this.tabPagePrint.PerformLayout();
+            this.tabPageSettings.ResumeLayout(false);
+            this.tabPageSettings.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -604,6 +647,8 @@
         private MetroFramework.Controls.MetroLabel metroLabel11;
         private MetroFramework.Controls.MetroTabPage tabPagePrint;
         private MetroFramework.Controls.MetroLabel metroLabel12;
+        private MetroFramework.Controls.MetroTextBox textBoxOrganName;
+        private MetroFramework.Controls.MetroLabel metroLabel13;
     }
 }
 

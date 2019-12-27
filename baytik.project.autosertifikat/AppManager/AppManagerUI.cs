@@ -4,7 +4,7 @@ namespace CompleteApp
 {
     public partial class AppManager
     {
-        public void ChangeTeam(int team)
+        private void ChangeTeam(int team)
         {
             
             switch (team)
@@ -18,7 +18,7 @@ namespace CompleteApp
             }
         }
 
-        public void ChangeHead(int head)
+        private void ChangeHead(int head)
         {
             metroStyleManager.Style = 
                 (MetroFramework.MetroColorStyle)Convert.ToInt32(head);

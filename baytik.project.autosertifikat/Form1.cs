@@ -7,9 +7,9 @@ namespace CompleteApp
     {
         /*
          * TO DO:
-         *      AppManagerVar -> Хранить в конфиге название компании.
-         *      Баг с висящим процессом Excel остался.
-         *      Хранить в конфиге, выбранные цвета темы и шапки.
+         *      Печать из приложения "пачки" doc файлов.
+         * Bug list:
+         *      Баг с висящим процессом Excel (после закрытия приложения) остался.
          * */
         private static AppManager instance = null;
         public Form1()
@@ -27,15 +27,21 @@ namespace CompleteApp
 
         public void InitAppConfig()
         {
+            if (instance == null) return;
+            // Общие настройки вида приложения.
             instance.metroStyleManager = metroStyleManager1;
             this.StyleManager = metroStyleManager1;
             ComboBox_changeTeam.SelectedIndex = instance.backgroundTeam;
             ComboBox_changeHead.SelectedIndex = instance.backgroundHead;
             CellColumn2TextBox.Enabled = false;
             CellColumn3TextBox.Enabled = false;
+
+            // Заполнение полей в настройках.
             textBoxAdress.Text = instance.adress;
             textBoxKeyword.Text = instance.keyword;
+            textBoxOrganName.Text = instance.companyName;
 
+            // Инициализация instance.
             instance.cellPage = CellPage;
             instance.cellBegin = CellBegin;
             instance.cellEnd = CellEnd;
@@ -50,7 +56,7 @@ namespace CompleteApp
 
         private void BtnSaveSetting_Click(object sender, EventArgs e)
         {
-            instance.SaveSettings(textBoxAdress.Text, textBoxKeyword.Text);
+            instance.SaveSettings(textBoxAdress.Text, textBoxKeyword.Text, textBoxOrganName.Text);
         }
         private void BtnRefreshList_Click(object sender, EventArgs e)
         {
@@ -66,11 +72,13 @@ namespace CompleteApp
         }
         private void ChangeTeam(object sender, EventArgs e)
         {
-            instance.ChangeTeam(ComboBox_changeTeam.SelectedIndex);
+            instance.SaveUISettings(ComboBox_changeTeam.SelectedIndex, 
+                                    ComboBox_changeHead.SelectedIndex);
         }
         private void ChangeHead(object sender, EventArgs e)
         {
-            instance.ChangeHead(ComboBox_changeHead.SelectedIndex);
+            instance.SaveUISettings(ComboBox_changeTeam.SelectedIndex, 
+                                    ComboBox_changeHead.SelectedIndex);
         }
         private void ActiveBox2_CheckedChanged(object sender, EventArgs e)
         {
