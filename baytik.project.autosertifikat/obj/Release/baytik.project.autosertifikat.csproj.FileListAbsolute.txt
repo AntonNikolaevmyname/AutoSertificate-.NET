@@ -1,0 +1,29 @@
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.exe.config
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\Interop.LCC11.dll
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.csproj.ResolveComReference.cache
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.exe
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.pdb
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\bin\Release\MetroFramework.Design.dll
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\bin\Release\MetroFramework.dll
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\bin\Release\MetroFramework.Fonts.dll
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.Form1.resources
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.Properties.Resources.resources
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.csproj.GenerateResource.Cache
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.exe
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.pdb
+C:\Users\DNS\documents\visual studio 2015\Projects\baytik.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.csprojResolveAssemblyReference.cache
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.exe.config
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.exe
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.pdb
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Release\MetroFramework.Design.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Release\MetroFramework.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Release\MetroFramework.Fonts.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.csprojAssemblyReference.cache
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\Interop.LCC11.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.csproj.ResolveComReference.cache
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.Form1.resources
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.Properties.Resources.resources
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.csproj.GenerateResource.cache
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.csproj.CopyComplete
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.exe
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.pdb

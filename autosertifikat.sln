@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autosertifikat", "baytik.project.autosertifikat\autosertifikat.csproj", "{8AEDCC93-9CEF-4C83-B69D-34C06D696E48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AEDCC93-9CEF-4C83-B69D-34C06D696E48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AEDCC93-9CEF-4C83-B69D-34C06D696E48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AEDCC93-9CEF-4C83-B69D-34C06D696E48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AEDCC93-9CEF-4C83-B69D-34C06D696E48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC41AF4A-86E8-4CB9-B988-A88378244CB7}
+	EndGlobalSection
+EndGlobal

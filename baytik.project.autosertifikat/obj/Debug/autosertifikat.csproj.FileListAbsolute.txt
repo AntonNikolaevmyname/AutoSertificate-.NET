@@ -1,0 +1,15 @@
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Debug\baytik.project.autosertifikat.exe.config
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Debug\baytik.project.autosertifikat.exe
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Debug\baytik.project.autosertifikat.pdb
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Debug\MetroFramework.Design.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Debug\MetroFramework.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\autosertifikat.csprojAssemblyReference.cache
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\Interop.LCC11.dll
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\autosertifikat.csproj.ResolveComReference.cache
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\CompleteApp.Form1.resources
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\baytik.project.autosertifikat.Properties.Resources.resources
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\autosertifikat.csproj.GenerateResource.cache
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\autosertifikat.csproj.CopyComplete
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\baytik.project.autosertifikat.exe
+C:\Users\DNS\Desktop\Sertificate\C#.project.autosertifikat\baytik.project.autosertifikat\obj\Debug\baytik.project.autosertifikat.pdb
