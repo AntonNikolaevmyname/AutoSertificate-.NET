@@ -17,7 +17,8 @@ namespace CompleteApp
         public TextBox cellBegin;
         public TextBox cellEnd;
         public MetroProgressBar progressBar;
-        public RichTextBox richText;
+        public RichTextBox listNamesRichText;
+        public RichTextBox saveFileNamesRichText;
         public TextBox cellColumn1TextBox;
         public TextBox cellColumn2TextBox;
         public TextBox cellColumn3TextBox;
@@ -29,9 +30,10 @@ namespace CompleteApp
         public string keyword;
         public string adress;
         public string companyName;
-
+        
         private StreamReader _sr;
         private StreamWriter _sw;
+        private List<string> _safeFileNames;
         private static List<string> _names;
         private int _cellBegin = 1;
         private int _cellEnd = 1;

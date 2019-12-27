@@ -5,11 +5,12 @@ using Excel = Microsoft.Office.Interop.Excel;
 
 namespace CompleteApp
 {
-    public partial class AppManager
+    public partial class AppManager : IDisposable
     {
         public void InitAppManager()
         {
             _names = new List<string>();
+            _safeFileNames = new List<string>();
         }
 
         public void SaveSettings(string adress, string keyword, string companyName)
@@ -54,7 +55,7 @@ namespace CompleteApp
 
             try
             {
-                richText.Clear();
+                listNamesRichText.Clear();
                 _names.Clear();
 
                 _objWorkSheet = (Excel.Worksheet)_objWorkBook.Sheets[_cellPage];
@@ -72,20 +73,20 @@ namespace CompleteApp
                     {
                         case "A":
                             column1 = range1.Text.ToString();
-                            richText.Text += $"{column1}\n";
+                            listNamesRichText.Text += $"{column1}\n";
                             _names.Add(column1);
                             break;
                         case "AB":
                             column1 = range1.Text.ToString();
                             column2 = range2.Text.ToString();
-                            richText.Text += $"{column1} {column2}\n";
+                            listNamesRichText.Text += $"{column1} {column2}\n";
                             _names.Add($"{column1} {column2}");
                             break;
                         case "ABC":
                             column1 = range1.Text.ToString();
                             column2 = range2.Text.ToString();
                             column3 = range3.Text.ToString();
-                            richText.Text += $"{column1} {column2} {column3}\n";
+                            listNamesRichText.Text += $"{column1} {column2} {column3}\n";
                             _names.Add($"{column1} {column2} {column3}");
                             break;
                         default:
@@ -108,11 +109,27 @@ namespace CompleteApp
             List<int> processesbeforegen = GetRunningProcessesExcel();
             List<int> processesaftergen = GetRunningProcessesExcel();
             KillProcesses(processesbeforegen, processesaftergen);
+            Dispose();
         }
 
         public void CloseForm()
         {
-            _objExcel.Quit();
+            Dispose();
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                // dispose managed resources
+                _objExcel.Quit();
+            }
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }

@@ -7,9 +7,9 @@ namespace CompleteApp
     {
         /*
          * TO DO:
-         *      Печать из приложения "пачки" doc файлов.
+         *      
          * Bug list:
-         *      Баг с висящим процессом Excel (после закрытия приложения) остался.
+         *      Некорректная работа с .doc файлами при печати, они не должны открываться.
          * */
         private static AppManager instance = null;
         public Form1()
@@ -46,12 +46,13 @@ namespace CompleteApp
             instance.cellBegin = CellBegin;
             instance.cellEnd = CellEnd;
             instance.progressBar = pg1;
-            instance.richText = richTextBox1;
+            instance.listNamesRichText = richTextBox1;
             instance.activeBoxB = ActiveBox2;
             instance.activeBoxC = ActiveBox3;
             instance.cellColumn1TextBox = CellColumn1TextBox;
             instance.cellColumn2TextBox = CellColumn2TextBox;
             instance.cellColumn3TextBox = CellColumn3TextBox;
+            instance.saveFileNamesRichText = richTextBox2;
         }
 
         private void BtnSaveSetting_Click(object sender, EventArgs e)
@@ -69,6 +70,14 @@ namespace CompleteApp
         private void Word_click(object sender, EventArgs e)
         {
             instance.WordReader();
+        }
+        private void ButtonGetWordFilesForPrint_Click(object sender, EventArgs e)
+        {
+            instance.GetWordFilesForPrint();
+        }
+        private void ButtonPrint_Click(object sender, EventArgs e)
+        {
+            instance.Print();
         }
         private void ChangeTeam(object sender, EventArgs e)
         {

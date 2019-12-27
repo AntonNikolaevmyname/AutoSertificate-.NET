@@ -12,7 +12,8 @@ namespace CompleteApp
                 {
                     Filter = "Microsoft Word  (*.doc*)|*.doc*",
                     FilterIndex = 2,
-                    Title = "Выберите файл Word"
+                    Title = "Выберите файл Word",
+                    InitialDirectory = adress
                 };
 
                 if (openFileDialog1.ShowDialog() == DialogResult.OK)

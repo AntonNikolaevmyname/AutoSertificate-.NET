@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="AppManager\AppManager.cs" />
     <Compile Include="AppManager\AppManagerExcel.cs" />
+    <Compile Include="AppManager\AppManagerPrintDocs.cs" />
     <Compile Include="AppManager\AppManagerProcess.cs" />
     <Compile Include="AppManager\AppManagerReadWrite.cs" />
     <Compile Include="AppManager\AppManagerUI.cs" />

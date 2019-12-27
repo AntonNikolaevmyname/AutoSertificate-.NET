@@ -57,8 +57,12 @@
             this.btnExcel = new MetroFramework.Controls.MetroButton();
             this.btnWord = new MetroFramework.Controls.MetroButton();
             this.tabPagePrint = new MetroFramework.Controls.MetroTabPage();
+            this.buttonPrint = new MetroFramework.Controls.MetroButton();
+            this.buttonGetWordFilesForPrint = new MetroFramework.Controls.MetroButton();
             this.metroLabel12 = new MetroFramework.Controls.MetroLabel();
             this.tabPageSettings = new MetroFramework.Controls.MetroTabPage();
+            this.textBoxOrganName = new MetroFramework.Controls.MetroTextBox();
+            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
             this.btnSaveSetting = new MetroFramework.Controls.MetroButton();
             this.textBoxKeyword = new MetroFramework.Controls.MetroTextBox();
             this.textBoxAdress = new MetroFramework.Controls.MetroTextBox();
@@ -67,8 +71,7 @@
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.textBoxOrganName = new MetroFramework.Controls.MetroTextBox();
-            this.metroLabel13 = new MetroFramework.Controls.MetroLabel();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.metroStyleManager1)).BeginInit();
             this.metroPanel1.SuspendLayout();
             this.metroTabControl1.SuspendLayout();
@@ -134,7 +137,7 @@
             this.metroPanel1.HorizontalScrollbarSize = 10;
             this.metroPanel1.Location = new System.Drawing.Point(27, 69);
             this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(881, 489);
+            this.metroPanel1.Size = new System.Drawing.Size(1026, 508);
             this.metroPanel1.TabIndex = 3;
             this.metroPanel1.VerticalScrollbarBarColor = true;
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
@@ -148,8 +151,8 @@
             this.metroTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.metroTabControl1.Location = new System.Drawing.Point(0, 0);
             this.metroTabControl1.Name = "metroTabControl1";
-            this.metroTabControl1.SelectedIndex = 2;
-            this.metroTabControl1.Size = new System.Drawing.Size(879, 487);
+            this.metroTabControl1.SelectedIndex = 1;
+            this.metroTabControl1.Size = new System.Drawing.Size(1024, 506);
             this.metroTabControl1.TabIndex = 4;
             this.metroTabControl1.UseSelectable = true;
             // 
@@ -184,7 +187,7 @@
             this.tabPageMain.HorizontalScrollbarSize = 14;
             this.tabPageMain.Location = new System.Drawing.Point(4, 38);
             this.tabPageMain.Name = "tabPageMain";
-            this.tabPageMain.Size = new System.Drawing.Size(871, 445);
+            this.tabPageMain.Size = new System.Drawing.Size(1016, 464);
             this.tabPageMain.TabIndex = 0;
             this.tabPageMain.Text = "Главная";
             this.tabPageMain.VerticalScrollbar = true;
@@ -205,14 +208,14 @@
             // 
             this.pg1.Location = new System.Drawing.Point(3, 415);
             this.pg1.Name = "pg1";
-            this.pg1.Size = new System.Drawing.Size(337, 30);
+            this.pg1.Size = new System.Drawing.Size(300, 30);
             this.pg1.TabIndex = 29;
             // 
             // btnRefreshList
             // 
             this.btnRefreshList.Location = new System.Drawing.Point(3, 323);
             this.btnRefreshList.Name = "btnRefreshList";
-            this.btnRefreshList.Size = new System.Drawing.Size(337, 30);
+            this.btnRefreshList.Size = new System.Drawing.Size(300, 30);
             this.btnRefreshList.TabIndex = 28;
             this.btnRefreshList.Text = "Обновить и отобразить выбранные поля списком";
             this.btnRefreshList.UseSelectable = true;
@@ -272,9 +275,9 @@
             this.richTextBox1.BackColor = System.Drawing.SystemColors.Info;
             this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Right;
             this.richTextBox1.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(365, 0);
+            this.richTextBox1.Location = new System.Drawing.Point(510, 0);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(506, 445);
+            this.richTextBox1.Size = new System.Drawing.Size(506, 464);
             this.richTextBox1.TabIndex = 20;
             this.richTextBox1.Text = "";
             // 
@@ -363,7 +366,7 @@
             // 
             this.btnExcel.Location = new System.Drawing.Point(3, 37);
             this.btnExcel.Name = "btnExcel";
-            this.btnExcel.Size = new System.Drawing.Size(337, 30);
+            this.btnExcel.Size = new System.Drawing.Size(300, 30);
             this.btnExcel.TabIndex = 5;
             this.btnExcel.Text = "Выбрать Excel файл ";
             this.btnExcel.UseSelectable = true;
@@ -373,7 +376,7 @@
             // 
             this.btnWord.Location = new System.Drawing.Point(3, 359);
             this.btnWord.Name = "btnWord";
-            this.btnWord.Size = new System.Drawing.Size(337, 30);
+            this.btnWord.Size = new System.Drawing.Size(300, 30);
             this.btnWord.TabIndex = 4;
             this.btnWord.Text = "Выбрать Word файл с шаблоном сертификата";
             this.btnWord.UseSelectable = true;
@@ -381,27 +384,50 @@
             // 
             // tabPagePrint
             // 
+            this.tabPagePrint.Controls.Add(this.richTextBox2);
+            this.tabPagePrint.Controls.Add(this.buttonPrint);
+            this.tabPagePrint.Controls.Add(this.buttonGetWordFilesForPrint);
             this.tabPagePrint.Controls.Add(this.metroLabel12);
             this.tabPagePrint.HorizontalScrollbarBarColor = true;
             this.tabPagePrint.HorizontalScrollbarHighlightOnWheel = false;
-            this.tabPagePrint.HorizontalScrollbarSize = 9;
+            this.tabPagePrint.HorizontalScrollbarSize = 7;
             this.tabPagePrint.Location = new System.Drawing.Point(4, 38);
             this.tabPagePrint.Name = "tabPagePrint";
-            this.tabPagePrint.Size = new System.Drawing.Size(871, 445);
+            this.tabPagePrint.Size = new System.Drawing.Size(1016, 464);
             this.tabPagePrint.TabIndex = 3;
             this.tabPagePrint.Text = "Печать";
             this.tabPagePrint.VerticalScrollbarBarColor = true;
             this.tabPagePrint.VerticalScrollbarHighlightOnWheel = false;
-            this.tabPagePrint.VerticalScrollbarSize = 8;
+            this.tabPagePrint.VerticalScrollbarSize = 4;
+            // 
+            // buttonPrint
+            // 
+            this.buttonPrint.Location = new System.Drawing.Point(3, 120);
+            this.buttonPrint.Name = "buttonPrint";
+            this.buttonPrint.Size = new System.Drawing.Size(330, 30);
+            this.buttonPrint.TabIndex = 4;
+            this.buttonPrint.Text = "Печать";
+            this.buttonPrint.UseSelectable = true;
+            this.buttonPrint.Click += new System.EventHandler(this.ButtonPrint_Click);
+            // 
+            // buttonGetWordFilesForPrint
+            // 
+            this.buttonGetWordFilesForPrint.Location = new System.Drawing.Point(3, 70);
+            this.buttonGetWordFilesForPrint.Name = "buttonGetWordFilesForPrint";
+            this.buttonGetWordFilesForPrint.Size = new System.Drawing.Size(330, 30);
+            this.buttonGetWordFilesForPrint.TabIndex = 3;
+            this.buttonGetWordFilesForPrint.Text = "Выбрать файлы";
+            this.buttonGetWordFilesForPrint.UseSelectable = true;
+            this.buttonGetWordFilesForPrint.Click += new System.EventHandler(this.ButtonGetWordFilesForPrint_Click);
             // 
             // metroLabel12
             // 
             this.metroLabel12.AutoSize = true;
-            this.metroLabel12.Location = new System.Drawing.Point(292, 197);
+            this.metroLabel12.Location = new System.Drawing.Point(3, 34);
             this.metroLabel12.Name = "metroLabel12";
-            this.metroLabel12.Size = new System.Drawing.Size(254, 19);
+            this.metroLabel12.Size = new System.Drawing.Size(340, 19);
             this.metroLabel12.TabIndex = 2;
-            this.metroLabel12.Text = "Этот функционал сейчас в разработке...";
+            this.metroLabel12.Text = "Выберите файлы Word, чтобы отправить их в печать :";
             this.metroLabel12.UseWaitCursor = true;
             // 
             // tabPageSettings
@@ -425,13 +451,52 @@
             this.tabPageSettings.HorizontalScrollbarSize = 14;
             this.tabPageSettings.Location = new System.Drawing.Point(4, 38);
             this.tabPageSettings.Name = "tabPageSettings";
-            this.tabPageSettings.Size = new System.Drawing.Size(871, 445);
+            this.tabPageSettings.Size = new System.Drawing.Size(1016, 464);
             this.tabPageSettings.TabIndex = 2;
             this.tabPageSettings.Text = "Настройки";
             this.tabPageSettings.VerticalScrollbar = true;
             this.tabPageSettings.VerticalScrollbarBarColor = true;
             this.tabPageSettings.VerticalScrollbarHighlightOnWheel = false;
             this.tabPageSettings.VerticalScrollbarSize = 10;
+            // 
+            // textBoxOrganName
+            // 
+            // 
+            // 
+            // 
+            this.textBoxOrganName.CustomButton.Image = null;
+            this.textBoxOrganName.CustomButton.Location = new System.Drawing.Point(709, 1);
+            this.textBoxOrganName.CustomButton.Name = "";
+            this.textBoxOrganName.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.textBoxOrganName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.textBoxOrganName.CustomButton.TabIndex = 1;
+            this.textBoxOrganName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.textBoxOrganName.CustomButton.UseSelectable = true;
+            this.textBoxOrganName.CustomButton.Visible = false;
+            this.textBoxOrganName.Lines = new string[0];
+            this.textBoxOrganName.Location = new System.Drawing.Point(7, 194);
+            this.textBoxOrganName.MaxLength = 32767;
+            this.textBoxOrganName.Name = "textBoxOrganName";
+            this.textBoxOrganName.PasswordChar = '\0';
+            this.textBoxOrganName.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.textBoxOrganName.SelectedText = "";
+            this.textBoxOrganName.SelectionLength = 0;
+            this.textBoxOrganName.SelectionStart = 0;
+            this.textBoxOrganName.ShortcutsEnabled = true;
+            this.textBoxOrganName.Size = new System.Drawing.Size(731, 23);
+            this.textBoxOrganName.TabIndex = 24;
+            this.textBoxOrganName.UseSelectable = true;
+            this.textBoxOrganName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.textBoxOrganName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // metroLabel13
+            // 
+            this.metroLabel13.AutoSize = true;
+            this.metroLabel13.Location = new System.Drawing.Point(5, 161);
+            this.metroLabel13.Name = "metroLabel13";
+            this.metroLabel13.Size = new System.Drawing.Size(199, 19);
+            this.metroLabel13.TabIndex = 25;
+            this.metroLabel13.Text = "Название вашей организации:";
             // 
             // btnSaveSetting
             // 
@@ -543,50 +608,22 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBoxOrganName
+            // richTextBox2
             // 
-            // 
-            // 
-            // 
-            this.textBoxOrganName.CustomButton.Image = null;
-            this.textBoxOrganName.CustomButton.Location = new System.Drawing.Point(709, 1);
-            this.textBoxOrganName.CustomButton.Name = "";
-            this.textBoxOrganName.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.textBoxOrganName.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.textBoxOrganName.CustomButton.TabIndex = 1;
-            this.textBoxOrganName.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.textBoxOrganName.CustomButton.UseSelectable = true;
-            this.textBoxOrganName.CustomButton.Visible = false;
-            this.textBoxOrganName.Lines = new string[0];
-            this.textBoxOrganName.Location = new System.Drawing.Point(7, 194);
-            this.textBoxOrganName.MaxLength = 32767;
-            this.textBoxOrganName.Name = "textBoxOrganName";
-            this.textBoxOrganName.PasswordChar = '\0';
-            this.textBoxOrganName.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBoxOrganName.SelectedText = "";
-            this.textBoxOrganName.SelectionLength = 0;
-            this.textBoxOrganName.SelectionStart = 0;
-            this.textBoxOrganName.ShortcutsEnabled = true;
-            this.textBoxOrganName.Size = new System.Drawing.Size(731, 23);
-            this.textBoxOrganName.TabIndex = 24;
-            this.textBoxOrganName.UseSelectable = true;
-            this.textBoxOrganName.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.textBoxOrganName.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // metroLabel13
-            // 
-            this.metroLabel13.AutoSize = true;
-            this.metroLabel13.Location = new System.Drawing.Point(5, 161);
-            this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(199, 19);
-            this.metroLabel13.TabIndex = 25;
-            this.metroLabel13.Text = "Название вашей организации:";
+            this.richTextBox2.BackColor = System.Drawing.SystemColors.Info;
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.richTextBox2.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox2.Location = new System.Drawing.Point(510, 0);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(506, 464);
+            this.richTextBox2.TabIndex = 21;
+            this.richTextBox2.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 581);
+            this.ClientSize = new System.Drawing.Size(1080, 600);
             this.Controls.Add(this.metroPanel1);
             this.Font = new System.Drawing.Font("Script MT Bold", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HelpButton = true;
@@ -649,6 +686,9 @@
         private MetroFramework.Controls.MetroLabel metroLabel12;
         private MetroFramework.Controls.MetroTextBox textBoxOrganName;
         private MetroFramework.Controls.MetroLabel metroLabel13;
+        private MetroFramework.Controls.MetroButton buttonPrint;
+        private MetroFramework.Controls.MetroButton buttonGetWordFilesForPrint;
+        private System.Windows.Forms.RichTextBox richTextBox2;
     }
 }
 
