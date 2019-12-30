@@ -22,6 +22,8 @@
 Данные параметры в настройках мы можете постоянно менять для более удобного поиска по имени.
 
  **PS** Также внизу панели мы можете поменять стиль приложения, он сохраняется автоматически после выбора.
+ 
+![](https://github.com/AntonNikolaevmyname/AutoSertificate-.NET/blob/master/Images/settings.PNG)
 
 >______________________________________________
 **Главная**
@@ -34,7 +36,11 @@
  
  Далее нужно подготовить шаблон word файла и выбрать его. Дождитесь загрузки.
  
+ ![](https://github.com/AntonNikolaevmyname/AutoSertificate-.NET/blob/master/Images/main.PNG)
+ 
  >______________________________________________
   **Печать**
   
   В этой вкладке вы можете распечатать выбранные вами файлы (нужен принтер :blush: ).
+  
+  ![](https://github.com/AntonNikolaevmyname/AutoSertificate-.NET/blob/master/Images/paint.PNG)
