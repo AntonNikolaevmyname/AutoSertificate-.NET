@@ -5,12 +5,6 @@ namespace CompleteApp
 {
     public partial class Form1 : MetroForm
     {
-        /*
-         * TO DO:
-         *      
-         * Bug list:
-         *      Некорректная работа с .doc файлами при печати, они не должны открываться.
-         * */
         private static AppManager instance = null;
         public Form1()
         {
@@ -55,11 +49,11 @@ namespace CompleteApp
             instance.saveFileNamesRichText = richTextBox2;
         }
 
-        private void BtnSaveSetting_Click(object sender, EventArgs e)
+        private void SaveSetting_Click(object sender, EventArgs e)
         {
             instance.SaveSettings(textBoxAdress.Text, textBoxKeyword.Text, textBoxOrganName.Text);
         }
-        private void BtnRefreshList_Click(object sender, EventArgs e)
+        private void RefreshList_Click(object sender, EventArgs e)
         {
             instance.RefreshList();
         }
@@ -71,11 +65,11 @@ namespace CompleteApp
         {
             instance.WordReader();
         }
-        private void ButtonGetWordFilesForPrint_Click(object sender, EventArgs e)
+        private void GetWordFilesForPrint_Click(object sender, EventArgs e)
         {
             instance.GetWordFilesForPrint();
         }
-        private void ButtonPrint_Click(object sender, EventArgs e)
+        private void Print_Click(object sender, EventArgs e)
         {
             instance.Print();
         }
@@ -99,7 +93,7 @@ namespace CompleteApp
         }
         private void Form1_FormClosing(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            instance.CloseForm();
+            instance.Dispose();
         }
     }
 }

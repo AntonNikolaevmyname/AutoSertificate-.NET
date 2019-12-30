@@ -1,0 +1,15 @@
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.exe.config
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.exe
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\bin\Release\baytik.project.autosertifikat.pdb
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\bin\Release\MetroFramework.Design.dll
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\bin\Release\MetroFramework.dll
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\bin\Release\MetroFramework.Fonts.dll
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\autosertifikat.csprojAssemblyReference.cache
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\Interop.LCC11.dll
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\autosertifikat.csproj.ResolveComReference.cache
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\CompleteApp.Form1.resources
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.Properties.Resources.resources
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\autosertifikat.csproj.GenerateResource.cache
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\autosertifikat.csproj.CopyComplete
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.exe
+C:\Users\DNS\Documents\GitHub\AutoSertificate-.NET\baytik.project.autosertifikat\obj\Release\baytik.project.autosertifikat.pdb

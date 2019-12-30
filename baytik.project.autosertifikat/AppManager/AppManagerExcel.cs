@@ -18,6 +18,7 @@ namespace CompleteApp
             {
                 try
                 {
+                    Cursor.Current = Cursors.WaitCursor;
                     _objExcel = new Excel.Application();                                                                                                                  
                     _objWorkBook = 
                         _objExcel.Workbooks.Open
@@ -26,7 +27,7 @@ namespace CompleteApp
                             "", "", false, Excel.XlPlatform.xlWindows,
                             "", true, false, 0, true, false, false
                         );
-
+                    Cursor.Current = Cursors.Default;
                 }
                 catch { MessageBox.Show("Не удалось открыть Excel file", "Invalid input file."); }
             }

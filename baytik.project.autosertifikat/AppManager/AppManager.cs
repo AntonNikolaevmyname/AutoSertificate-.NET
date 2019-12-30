@@ -109,19 +109,12 @@ namespace CompleteApp
             List<int> processesbeforegen = GetRunningProcessesExcel();
             List<int> processesaftergen = GetRunningProcessesExcel();
             KillProcesses(processesbeforegen, processesaftergen);
-            Dispose();
-        }
-
-        public void CloseForm()
-        {
-            Dispose();
         }
 
         protected virtual void Dispose(bool disposing)
         {
             if (disposing)
             {
-                // dispose managed resources
                 _objExcel.Quit();
             }
         }

@@ -28,8 +28,10 @@ namespace CompleteApp
                     }
                     progressBar.PerformStep();
                     Cursor.Current = Cursors.Default;
+                    progressBar.Value = 0;
+                    MessageBox.Show("Все файлы созданы успешно!", "Word complete.");
                 }
-
+                Dispose();
 
             }
             catch { MessageBox.Show("Попробуйте снова.", "Word error."); }

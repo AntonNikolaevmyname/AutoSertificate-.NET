@@ -219,7 +219,7 @@
             this.btnRefreshList.TabIndex = 28;
             this.btnRefreshList.Text = "Обновить и отобразить выбранные поля списком";
             this.btnRefreshList.UseSelectable = true;
-            this.btnRefreshList.Click += new System.EventHandler(this.BtnRefreshList_Click);
+            this.btnRefreshList.Click += new System.EventHandler(this.RefreshList_Click);
             // 
             // metroLabel10
             // 
@@ -408,7 +408,7 @@
             this.buttonPrint.TabIndex = 4;
             this.buttonPrint.Text = "Печать";
             this.buttonPrint.UseSelectable = true;
-            this.buttonPrint.Click += new System.EventHandler(this.ButtonPrint_Click);
+            this.buttonPrint.Click += new System.EventHandler(this.Print_Click);
             // 
             // buttonGetWordFilesForPrint
             // 
@@ -418,7 +418,7 @@
             this.buttonGetWordFilesForPrint.TabIndex = 3;
             this.buttonGetWordFilesForPrint.Text = "Выбрать файлы";
             this.buttonGetWordFilesForPrint.UseSelectable = true;
-            this.buttonGetWordFilesForPrint.Click += new System.EventHandler(this.ButtonGetWordFilesForPrint_Click);
+            this.buttonGetWordFilesForPrint.Click += new System.EventHandler(this.GetWordFilesForPrint_Click);
             // 
             // metroLabel12
             // 
@@ -506,7 +506,7 @@
             this.btnSaveSetting.TabIndex = 23;
             this.btnSaveSetting.Text = "Сохранить";
             this.btnSaveSetting.UseSelectable = true;
-            this.btnSaveSetting.Click += new System.EventHandler(this.BtnSaveSetting_Click);
+            this.btnSaveSetting.Click += new System.EventHandler(this.SaveSetting_Click);
             // 
             // textBoxKeyword
             // 
