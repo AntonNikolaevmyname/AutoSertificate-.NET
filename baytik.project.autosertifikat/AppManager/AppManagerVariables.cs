@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using Excel = Microsoft.Office.Interop.Excel;
-using System.IO;
 using System.Windows.Forms;
 using MetroFramework.Controls;
 using MetroFramework.Components;
@@ -10,7 +9,6 @@ namespace CompleteApp
     public partial class AppManager
     {
         public readonly string configFileName = "config.txt";
-        public static bool isConfigFileFind = false;
 
         public MetroStyleManager metroStyleManager;
         public TextBox cellPage;
@@ -31,8 +29,6 @@ namespace CompleteApp
         public string adress;
         public string companyName;
         
-        private StreamReader _sr;
-        private StreamWriter _sw;
         private List<string> _safeFileNames;
         private static List<string> _names;
         private int _cellBegin = 1;

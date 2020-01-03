@@ -10,73 +10,58 @@ namespace CompleteApp
         {
             try
             {
-                _sr =
-                   new StreamReader(configFileName, System.Text.Encoding.Default);
-                isConfigFileFind = true;
-            }
-            catch { isConfigFileFind = false; }
-
-            if (!ConfigFileChecker())
-            {
-                return;
-            }
-
-            int i = 0;
-            string line;
-            while ((line = _sr.ReadLine()) != null)
-            {
-                switch(i)
+                using (StreamReader sr =
+                       new StreamReader(configFileName, System.Text.Encoding.Default))
                 {
-                    case 0:
-                        adress = line;
-                        break;
-                    case 1:
-                        keyword = line;
-                        break;
-                    case 2:
-                        companyName = line;
-                        break;
-                    case 3:
-                        backgroundTeam = Int32.Parse(line);
-                        break;
-                    case 4:
-                        backgroundHead = Int32.Parse(line);
-                        break;
-                    default:
-                        break;
+                    int i = 0;
+                    string line = string.Empty;
+                    while ((line = sr.ReadLine()) != null)
+                    {
+                        switch (i)
+                        {
+                            case 0:
+                                adress = line;
+                                break;
+                            case 1:
+                                keyword = line;
+                                break;
+                            case 2:
+                                companyName = line;
+                                break;
+                            case 3:
+                                backgroundTeam = Int32.Parse(line);
+                                break;
+                            case 4:
+                                backgroundHead = Int32.Parse(line);
+                                break;
+                            default:
+                                break;
+                        }
+                        i++;
+                    }
+                    sr.Close();
                 }
-                i++;
             }
-            _sr.Close();
+            catch (Exception e){ MessageBox.Show($"Ошибка: {e.Message}"); }
         }
 
 
         private void WriteConfig()
         {
-            if (!ConfigFileChecker())
+            try
             {
-                return;
+                using (StreamWriter sw =
+                     new StreamWriter(configFileName, false, System.Text.Encoding.Default))
+                {
+                    sw.WriteLine(adress);
+                    sw.WriteLine(keyword);
+                    sw.WriteLine(companyName);
+                    sw.WriteLine(backgroundTeam);
+                    sw.WriteLine(backgroundHead);
+                    sw.Close();
+                }
             }
-
-            _sw =
-                 new StreamWriter(configFileName, false, System.Text.Encoding.Default);
-
-            _sw.WriteLine(adress);
-            _sw.WriteLine(keyword);
-            _sw.WriteLine(companyName);
-            _sw.WriteLine(backgroundTeam);
-            _sw.WriteLine(backgroundHead);
-
-            _sw.Close();
-        }
-        private bool ConfigFileChecker()
-        {
-            if (!isConfigFileFind)
-            {
-                MessageBox.Show($"Файл {configFileName} не найден", $"{configFileName}.txt not found");
-                return false;
-            }
-            return true;
+            catch (Exception e) { MessageBox.Show($"Ошибка: {e.Message}"); }
         }
     }
 }
