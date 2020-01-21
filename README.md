@@ -44,3 +44,6 @@
   В этой вкладке вы можете распечатать выбранные вами файлы (нужен принтер :blush: ).
   
   ![](https://github.com/AntonNikolaevmyname/AutoSertificate-.NET/blob/master/Images/paint.PNG)
+  
+## Начало работы
+Для развертывания приложения на рабочем столе скачайте папку CompleteApp с релизной версией и запустите exe-файл в папке с проектом (либо через ярлык в папке CompleteApp).
